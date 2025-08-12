@@ -42,5 +42,9 @@ def home() -> str:
     else:
         return render_template('index.html')    
     
+@app.route('/menu')
+def menu():
+    return render_template('menu.html')
+    
 if __name__ == "__main__":
     app.run(port=8080)
